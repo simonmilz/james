@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    This is James
+    James is a small Node.js server running on my Rapberry Pi. It is the way into my internal network and ensures that my four Google Home Minis can automate and understand even more things. In combination with the appropriate DialogFlow script I teach James more and more commands.
 </p>
 
 <p align="center">
