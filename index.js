@@ -3,12 +3,12 @@ const Queue = require('bull');
 
 require('dotenv').config();
 
-const HomeAutomationQueue = new Queue(process.env.HOME_QUEUE_NAME, process.env.REDIS_URL);
-const bravia = new Bravia(process.env.HOME_BRAVIA_IP, '80', process.env.HOME_BRAVIA_KEY);
+const JamesQueue = new Queue(process.env.JAMES_QUEUE_NAME, process.env.JAMES_QUEUE_URI);
+const bravia = new Bravia(process.env.SONY_BRAVIA_IP, '80', process.env.SONY_BRAVIA_KEY);
 
-HomeAutomationQueue.process(function(job, done){
+JamesQueue.process(function(job, done){
 	try {
-		if ('tv' === job.data.result.parameters.device) {
+		if ('james.tv' === job.data.result.action) {
 			bravia.send(job.data.result.parameters.command);
 		}
 	} catch (e) {} finally {
