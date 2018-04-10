@@ -36,3 +36,5 @@ Now let's take a look at the Node.js packages:
 
 * `bull` -> https://github.com/OptimalBits/bull - The fastest, most reliable, Redis-based queue for Node. 
 Carefully written for rock solid stability and atomicity. `bull` is used as a message queue. James DialogFlow script also uses `bull` and sends the corresponding messages there.
+
+* `bravia` -> https://github.com/waynehaffenden/bravia - Node.js module for discovering and controlling Sony BRAVIA Android TVs. This module allows you retrieve all the available service protocol API methods and invoke any of them. That is the package to use if you have a Sony BRAVIA Android TV. 
