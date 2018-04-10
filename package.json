@@ -1,0 +1,16 @@
+{
+  "name": "milzer-home-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bravia": "^1.2.0",
+    "bull": "^3.3.10",
+    "dotenv": "^5.0.1"
+  }
+}
